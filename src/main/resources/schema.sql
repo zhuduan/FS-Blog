@@ -7,8 +7,8 @@ USE `fsblog`;
 DROP TABLE IF EXISTS `admin_user`;
 CREATE TABLE `admin_user` (
   `id` int(12) unsigned NOT NULL AUTO_INCREMENT COMMENT 'PrimaryKey',
-  `username` varchar(20) NOT NULL COMMENT '用户名',
-  `password` varchar(40) NOT NULL,
+  `username` varchar(50) NOT NULL COMMENT '用户名',
+  `password` varchar(100) NOT NULL,
   `birth_date` date DEFAULT NULL,
   `nickname` varchar(20) DEFAULT NULL,
   `email` varchar(40) DEFAULT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE `admin_user` (
   `gmt_create` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `gmt_modified` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 
 -- ----------------------------
@@ -38,7 +38,7 @@ CREATE TABLE `article` (
   `gmt_create` datetime DEFAULT CURRENT_TIMESTAMP,
   `gmt_modified` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=68 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 
 -- ----------------------------
@@ -51,7 +51,7 @@ CREATE TABLE `tag` (
   `gmt_create` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `gmt_modified` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 
 -- ----------------------------
@@ -65,7 +65,7 @@ CREATE TABLE `tag_article` (
   `gmt_create` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `gmt_modified` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`,`tag_id`,`article_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 
 -- ----------------------------
@@ -74,8 +74,8 @@ CREATE TABLE `tag_article` (
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int(12) unsigned NOT NULL AUTO_INCREMENT COMMENT 'PrimaryKey',
-  `username` varchar(20) NOT NULL COMMENT '用户名',
-  `password` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL COMMENT '用户名',
+  `password` varchar(100) NOT NULL,
   `birth_date` date DEFAULT NULL,
   `nickname` varchar(20) DEFAULT NULL,
   `email` varchar(40) DEFAULT NULL,
@@ -91,7 +91,7 @@ CREATE TABLE `user` (
   `gmt_create` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `gmt_modified` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 
 -- ----------------------------
@@ -107,4 +107,4 @@ CREATE TABLE `resume` (
   `gmt_create` datetime DEFAULT CURRENT_TIMESTAMP,
   `gmt_modified` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
