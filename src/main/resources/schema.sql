@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS `fsblog`;
+CREATE DATABASE IF NOT EXISTS `fsblog` default charset utf8;
 USE `fsblog`;
 
 -- ----------------------------
