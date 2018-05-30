@@ -35,7 +35,8 @@ public class FrontController extends BaseController {
    */
   @GetMapping("/index")
   public String pFrontIndex(HttpServletRequest request, Model model) {
-    return "index";
+    // "index" : no need for the post here
+    return "post";
   }
 
   /**
@@ -44,7 +45,8 @@ public class FrontController extends BaseController {
    */
   @PostMapping("/index")
   public String pFrontIndexPost(HttpServletRequest request, Model model) {
-    return "index";
+    // "index" : no need for the post here
+    return "post";
   }
 
   /**

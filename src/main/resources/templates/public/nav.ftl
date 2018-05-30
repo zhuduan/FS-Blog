@@ -3,9 +3,9 @@
     <div class="container-fluid">
     <#-- Logo 位置 -->
         <img class="mr-3" alt="Logo"
-             src="/img/logo.png" style="max-width: 30px">
+             src="/img/logo.jpeg" style="max-width: 30px">
         <a class="navbar-brand" href="#">
-            FS-Blog
+            LearnCode4Fun
         </a>
     <#-- 响应式导航下拉按钮 -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -18,9 +18,11 @@
                 <li class="nav-item">
                     <a class="nav-link"><#-- 占位 --></a>
                 </li>
-                <li class="nav-item <#if page_index?? && page_index == 0>active</#if>">
-                    <a class="nav-link" href="/">首页</a>
-                </li>
+                <!--
+                    <li class="nav-item <#if page_index?? && page_index == 0>active</#if>">
+                        <a class="nav-link" href="/">首页</a>
+                    </li>
+                -->
                 <li class="nav-item <#if page_index?? && page_index == 1>active</#if>">
                     <a class="nav-link" href="/post">博客</a>
                 </li>
@@ -32,6 +34,8 @@
                 </li>
             </ul>
         <#-- e 左侧导航 -->
+        
+        <!-- no need for login
         <#-- s 右侧导航 -->
             <ul class="nav navbar-nav ml-auto">
             <#if Session ["session_current_user"]??>
@@ -63,6 +67,7 @@
             </#if>
             </ul>
         <#-- e 右侧导航 -->
+        -->
         </div>
     </div>
 </nav>

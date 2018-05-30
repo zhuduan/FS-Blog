@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>${title!'Happy Life Happy Code-登录'}</title>
+    <title>${title!'Happy Life, Happy Code-登录'}</title>
 
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +56,7 @@
             <div class="container text-center mt-3">
                 <div class="row">
                     <a class="d-block small col-sm offset-6" href="userregister">现在注册</a>
-                    <a class="d-block small col-sm" href="#">忘记密码</a>
+                    <a class="d-block small col-sm" onclick="alert('联系管理员')">忘记密码</a>
                 </div>
             </div>
         </div>

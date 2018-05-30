@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>${title!'Happy Life Happy Code - 快乐编码，快乐生活'}</title>
+    <title>${title!'Happy Life, Happy Code - 快乐编码，快乐生活'}</title>
 
     <!-- Custom styles for this template -->
     <link href="/css/full-slider/full-slider.css" rel="stylesheet">
@@ -74,7 +74,7 @@
 <!-- Page Content -->
 <section class="py-5">
     <div class="container container-fluid">
-        <h1>Happy Life Happy Code - 快乐编码，快乐生活</h1>
+        <h1>Happy Life, Happy Code - 快乐编码，快乐生活</h1>
     </div>
 </section>
 

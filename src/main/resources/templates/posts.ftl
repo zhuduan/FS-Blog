@@ -30,13 +30,14 @@
 <#-- e-nav.ftl -->
 <!-- 落地页 -->
 <header class="masthead text-white text-center"
-        style="background-image: url('http://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg')">
+        style="background-image: url('http://blackrockdigital.github.io/startbootstrap-clean-blog/img/home-bg.jpg'); 
+               max-height: 100px;">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class="col mx-auto text-left pl-5">
-                <h1>FS-Blog</h1>
-                <h3>记录技术成长点滴</h3>
+                <h1>开心就好</h1>
+                <h3>Happy Life, Happy Code</h3>
             </div>
         </div>
     </div>
